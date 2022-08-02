@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(233deg, 47%, 7%);
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: min(90%, 120rem);
+  height: 40vh;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.main-container .stat-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  height: 100%;
+  padding: 3em;
+  background-color: hsl(244deg, 38%, 16%);
+}
+.main-container .stat-detail-container .title {
+  font-family: "Inter", sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.3;
+  color: hsl(0deg, 0%, 100%);
+  width: min(100%, 40rem);
+}
+.main-container .stat-detail-container .title span {
+  color: hsl(277deg, 64%, 61%);
+}
+.main-container .stat-detail-container .description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  width: min(100%, 40rem);
+  margin-bottom: 2em;
+}
+.main-container .stat-detail-container .stat-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+  width: min(100%, 40rem);
+}
+.main-container .stat-detail-container .stat-container .single-stat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.main-container .stat-detail-container .stat-container .single-stat-container .stat {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.main-container .stat-detail-container .stat-container .single-stat-container .stat-name {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+.main-container .main-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1.2/1;
+  position: relative;
+}
+.main-container .main-image .color-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277deg, 64%, 61%);
+  mix-blend-mode: overlay;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column-reverse;
+    margin: 3rem;
+    height: 90vh;
+    width: min(90%, 40rem);
+  }
+  .main-container .stat-detail-container {
+    width: 100%;
+    height: 70%;
+  }
+  .main-container .stat-detail-container .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .main-container .stat-detail-container .description {
+    text-align: center;
+  }
+  .main-container .stat-detail-container .stat-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .main-container .stat-detail-container .stat-container .single-stat-container {
+    align-items: center;
+  }
+  .main-container .main-image {
+    width: 100%;
+    height: 30%;
+    background-image: url("/images/image-header-mobile.jpg");
+  }
+}/*# sourceMappingURL=main.css.map */
