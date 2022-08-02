@@ -6,7 +6,8 @@
 
 // variables
     // screen size
-        $mobile: 768px;
+        $mobile: 375px;
+        $tablet: 768px;
         $desktop: 1440px;
 
     // fonts
@@ -62,7 +63,7 @@ body {
     @include flex(row, center, center);
     
     width: min(90%,120rem);
-    height: 40vh;
+    height: 50vh;
     border-radius: .8rem;
     overflow: hidden;
     
@@ -149,7 +150,7 @@ body {
     }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: $tablet) {
     .main-container {
         flex-direction: column-reverse;
         margin: 3rem;
@@ -188,5 +189,11 @@ body {
             background-image: url('/images/image-header-mobile.jpg');
         }
 
+    }
+}
+
+@media (max-width: $mobile) {
+    html {
+        font-size: 55%;
     }
 }
